@@ -1,0 +1,226 @@
+<html>
+  <head>
+    <style>
+      div.header{
+        width: 100%;
+        display: inline-block;
+        background-color: white;
+      }
+      div.header_left{
+        width: 35%;
+        display: inline-block;
+        float: left;
+        font-family: courier;
+        font-size: 20px;
+        background-color: #3F6492;
+      }
+      div.header_right{
+        width: 65%;
+        float: right;
+        display: inline-block;
+        font-family: courier;
+        font-size: 14px;
+        background-color: #3F6492;
+      }
+      div.public_transport_body_transportType{
+        width: 100%;
+        display: inline-block;
+        background-color: white;
+      }
+      div.public_transport_body_transportType_text{
+        width: 48%;
+        height: 50%;
+        display: inline-block;
+        background-color: white;
+        float: left;
+      }
+      div.public_transport_body_transportType_image_air{
+        width: 48%;
+        height: 50%;
+        display: inline-block;
+        background-color: green;
+        float: right;
+        background-image: url("./public_transport/airport_air.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        max-width: 100%;
+      }
+      div.public_transport_body_transportType_image_bus{
+        width: 48%;
+        height: 50%;
+        display: inline-block;
+        background-color: green;
+        float: right;
+        background-image: url("./public_transport/buses.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        max-width: 100%;
+      }
+      div.public_transport_body_transportType_image_train{
+        width: 48%;
+        height: 50%;
+        display: inline-block;
+        background-color: green;
+        float: right;
+        background-image: url("./public_transport/trains.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        max-width: 100%;
+      }
+      div.public_transport_body_transportType_image_cab{
+        width: 48%;
+        height: 50%;
+        display: inline-block;
+        background-color: green;
+        float: right;
+        background-image: url("./public_transport/car-cab.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        max-width: 100%;
+      }
+      div.public_transport_body_transportType_image_ferries{
+        width: 48%;
+        height: 50%;
+        display: inline-block;
+        background-color: green;
+        float: right;
+        background-image: url("./public_transport/water.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        max-width: 100%;
+      }
+      .footer{
+        width: 100%;
+        background-color: black;
+      }
+      .footer_block {
+        background-color: black;
+        width: 33%;
+        margin: 10px;
+
+      }
+      .footer_content{
+        width: 100%;
+        background-color: black;
+      }
+      div.div_flex{
+        display: flex;
+        flex-wrap: nowrap;
+        background-color: white;
+      }
+      div.div_flex_footer{
+        display: flex;
+        flex-wrap: nowrap;
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- following section is header of public_transport.html -->
+    <section>
+      <div class="header" >
+        <div class="header_left" style="height: 12%; text-align:center; vertical-align: middle; line-height: 4.5;">
+          <Text style="color: white"> Vancouver Tourism </Text>
+        </div>
+        <div class="header_right" style="height: 12%; text-align:center; vertical-align: middle; line-height: 6;">
+          <a href="home.html" style="margin-right: 3%; color: white; text-decoration: none"> Home </a>
+          <a href="book_travel_guide.html" style="margin-right: 3%; color: white; text-decoration: none"> Book Travel Guide </a>
+          <a href="book_advanture.html" style="margin-right: 3%; color: white; text-decoration: none"> Book Advanture </a>
+          <a href="places_to_visit.html" style="margin-right: 3%; color: white; text-decoration: none"> Places To Visit </a>
+          <a href="public_transport.html" style="margin-right: 3%; color: white; text-decoration: none"> Public Transport </a>
+          <a href="things_to_do.html" style="margin-right: 3%; color: white; text-decoration: none"> Things To Do </a>
+        </div>
+        <div class="image_belowHeader">
+        </div>
+      </div>
+    </section>
+    <!-- following section is body part of public_transport.html -->
+    <section>
+      <div style="width: 85%; margin: 0 auto;">
+          <!-- following section is for Public Transport - AIR -->
+          <div class="public_transport_body_transportType" style="margin-top: 10px">
+              <div class="public_transport_body_transportType_text">
+                  <p style="font-size: 40pt"> Air </p>
+                  <p style="font-size: 15pt"> You get off at vancouver airport and you will have many options from there to roam around the city.You get off at vancouver airport and you will have many options from there to roam around the city.You get off at vancouver airport and you will have many options from there to roam around the city.</p>
+              </div>
+              <div class="public_transport_body_transportType_image_air">
+              </div>
+          </div>
+          <!-- following section is for Public Transport - BUS -->
+          <div class="public_transport_body_transportType" style="margin-top: 30px">
+              <div class="public_transport_body_transportType_text" style="float: right;">
+                  <p style="font-size: 40pt"> Bus </p>
+                  <p style="font-size: 15pt"> There are buses all over the city that takes you from each route to every other route.Just you need to search and it will provide you information.There are buses all over the city that takes you from each route to every other route.Just you need to search and it will provide you information.There are buses all over the city that takes you from each route to every other route.Just you need to search and it will provide you information.</p>
+              </div>
+              <div class="public_transport_body_transportType_image_bus" style="float: left;">
+              </div>
+          </div>
+          <!-- following section is for Public Transport - TRAIN -->
+          <div class="public_transport_body_transportType" style="margin-top: 30px">
+              <div class="public_transport_body_transportType_text" >
+                  <p style="font-size: 40pt"> Train </p>
+                  <p style="font-size: 15pt"> There are sky train stations at every spot so you can take your train accordingly and reach the destination.There are sky train stations at every spot so you can take your train accordingly and reach the destination.There are sky train stations at every spot so you can take your train accordingly and reach the destination.</p>
+              </div>
+              <div class="public_transport_body_transportType_image_train" >
+              </div>
+          </div>
+          <!-- following section is for Public Transport - CAB -->
+          <div class="public_transport_body_transportType" style="margin-top: 30px">
+              <div class="public_transport_body_transportType_text" style="float: right;">
+                  <p style="font-size: 40pt"> Cab </p>
+                  <p style="font-size: 15pt"> You can call and book a cab for youself at any time and cab will be at your service.You can call and book a cab for youself at any time and cab will be at your service.You can call and book a cab for youself at any time and cab will be at your service.</p>
+              </div>
+              <div class="public_transport_body_transportType_image_cab" style="float: left;">
+              </div>
+          </div>
+          <!-- following section is for Public Transport - Ferries -->
+          <div class="public_transport_body_transportType" style="margin-top: 30px">
+              <div class="public_transport_body_transportType_text">
+                  <p style="font-size: 40pt"> Ferries </p>
+                  <p style="font-size: 15pt"> There are sea buses and ferries to make you roam in the icean and see the city around.There are sea buses and ferries to make you roam in the icean and see the city around.There are sea buses and ferries to make you roam in the icean and see the city around.</p>
+              </div>
+              <div class="public_transport_body_transportType_image_ferries" >
+              </div>
+          </div>
+      </div>
+    </section>
+    <!-- following section is footer of public_transport.html -->
+    <section>
+      <div class="footer" style="margin-top: 10px">
+          <div class="footer_content" style="width: 85%; margin: 0 auto;">
+          <div class="div_flex_footer" style="background: black">
+            <!-- following block is for footer: Copyright section -->
+            <div class="footer_block" style="text-align: center;">
+              <Text style="font-size: 30px; color: #D4E245;font-family: courier;"> Vancouver Tourism </Text>
+              <p style="font-size: 15px; color: white;font-family: courier;"> copyright @ 2019. All Right Reserved
+            </div>
+            <!-- following block is for footer: Quick link section -->
+            <div class="footer_block" style="text-align: left; margin-left: 10%;">
+                <Text style="font-size: 35px; color: #D4E245;font-family: courier;"> Quick Links </Text><Br>
+                  <a href="home.html" style="margin-right: 3%;font-family: courier; text-decoration: none;color: white"> Home </a><Br>
+                  <a href="book_travel_guide.html" style="margin-right: 3%;font-family: courier; text-decoration: none; color: white"> Book Travel Guide </a><Br>
+                  <a href="book_advanture.html" style="margin-right: 3%;font-family: courier; text-decoration: none; color: white"> Book Advanture </a><Br>
+            </div>
+            <!-- following block is for footer: contact no section -->
+            <div class="footer_block">
+              <Text style="font-size: 35px; color: #D4E245; font-family: courier;"> Contact No. </Text><Br>
+              <Text style="font-size: 15px; color: white;font-family: courier;"> +1 645 897 8898 </Text><Br>
+              <Text style="font-size: 15px; color: white;font-family: courier;"> +1 645 897 8898 </Text><Br>
+              <Text style="font-size: 15px; color: white;font-family: courier;"> +1 645 897 8898 </Text><Br>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

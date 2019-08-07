@@ -1,0 +1,264 @@
+<html>
+  <head>
+    <style>
+        div.header{
+          width: 100%;
+          display: inline-block;
+          background-color: white;
+        }
+        div.header_left{
+          width: 35%;
+          display: inline-block;
+          float: left;
+          font-family: courier;
+          font-size: 20px;
+          background-color: #3F6492;
+        }
+        div.header_right{
+          width: 65%;
+          float: right;
+          display: inline-block;
+          font-family: courier;
+          font-size: 14px;
+          background-color: #3F6492;
+        }
+        div.image_belowHeader{
+          background-image: url("./home/one_image1page1.jpg");
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+          object-fit: cover;
+          max-width: 100%;
+          height: 100%;
+        }
+        div.body_vancouver_general_info{
+          width: 100%;
+          display: inline-block;
+          background-color: white;
+        }
+        div.text_vancouver_general_info{
+          width: 50%;
+          height: 50%;
+          display: inline-block;
+          background-color: white;
+          float: left;
+        }
+        div.image_vancouver_general_info{
+          width: 50%;
+          height: 50%;
+          display: inline-block;
+          background-color: green;
+          float: right;
+          background-image: url("./home/two_image2_beside_text.jpg");
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+          object-fit: cover;
+          max-width: 100%;
+        }
+        div.div_flex{
+          display: flex;
+          flex-wrap: nowrap;
+          background-color: white;
+        }
+        .body_block {
+          background-color: #f1f1f1;
+          width: 33%;
+          margin: 10px;
+          text-align: center;
+          line-height: 75px;
+          font-size: 30px;
+        }
+        .footer_block {
+          background-color: black;
+          width: 33%;
+          margin: 10px;
+
+        }
+        div.div_flex_footer{
+          display: flex;
+          flex-wrap: nowrap;
+          background-color: white;
+        }
+        .footer_content{
+          width: 100%;
+          background-color: black;
+        }
+        .footer{
+          width: 100%;
+          background-color: black;
+        }
+        .button_more {
+          background-color: #008CBA; /* Blue */
+          border: none;
+          color: white;
+          padding: 15px 32px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          margin: 4px 2px;
+          cursor: pointer;
+        }
+        /*The model (background)*/
+        .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        padding-top: 100px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        }
+
+        /* Modal Content */
+        .modal-content {
+        background-color: #fefefe;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 50%;
+        }
+
+        /* The Close Button */
+        .close {
+        color: #aaaaaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+        }
+    </style>
+  </head>
+  <body>
+        <!-- following section is header of home.html -->
+        <section>
+          <div class="header" style="height: 100%">
+            <div class="header_left" style="height: 12%; text-align:center; vertical-align: middle; line-height: 4.5;">
+              <Text style="color: white"> Vancouver Tourism </Text>
+            </div>
+            <div class="header_right" style="height: 12%; text-align:center; vertical-align: middle; line-height: 6;">
+              <a href="home.html" style="margin-right: 3%; color: white; text-decoration: none"> Home </a>
+              <a href="book_travel_guide.html" style="margin-right: 3%; color: white; text-decoration: none"> Book Travel Guide </a>
+              <a href="book_advanture.html" style="margin-right: 3%; color: white; text-decoration: none"> Book Advanture </a>
+              <a href="places_to_visit.html" style="margin-right: 3%; color: white; text-decoration: none"> Places To Visit </a>
+              <a href="public_transport.html" style="margin-right: 3%; color: white; text-decoration: none"> Public Transport </a>
+              <a href="things_to_do.html" style="margin-right: 3%; color: white; text-decoration: none"> Things To Do </a>
+            </div>
+            <div class="image_belowHeader">
+            </div>
+          </div>
+        </section>
+        <!-- following section is body part of home.html -->
+        <section>
+          <div style="width: 85%; margin: 0 auto; margin-top: 10px">
+                <div class="body_vancouver_general_info">
+                    <div class="text_vancouver_general_info">
+                        <p style="font-size: 40pt"> Vancouver </p>
+                        <p style="font-size: 15pt"> Vancouver is one of the most famous city in canada in the state of british columbia.Its is a city with very vast diversity and culture.It has many tourist attractions and interesting places to visit and have fun with family and friends.Some of them are waterfront, Canada place, Downtown,stanley park,bear creek park,english bay beach. It is very famous for its casinos also.It is a very beautiful city in canada and one of the most best considered city to live in canada.</p>
+                    </div>
+                    <div class="image_vancouver_general_info">
+                    </div>
+                </div>
+                <div class="div_flex">
+                  <!-- following block is for body: Weather section -->
+                  <div class="body_block">
+                    <Text> Weather <Text>
+                    <img src="./home/three_weather.jpg" style="max-width: 100%; height: 300px;" >
+                    <button class="button_more" id="myBtn_weather">More</button>
+                  </div>
+                  <!-- following block is for body: Geography section -->
+                  <div class="body_block">
+                    <Text> Geography </Text>
+                    <img src="./home/6-geography2(home).png" style="max-width: 100%; height: 300px;" >
+                    <button class="button_more" id="myBtn_geography">More</button>
+                  </div>
+                  <!-- following block is for body: Culture section -->
+                  <div class="body_block">
+                    <Text> Culture </Text>
+                    <img src="./home/8-culture2(home).jpg" style="max-width: 100%; height: 300px;" >
+                    <button class="button_more" id="myBtn_culture">More</button>
+                  </div>
+                </div>
+          </div>
+        </section>
+
+        <!-- following section is footer of home.html -->
+        <section>
+          <div class="footer" style="margin-top: 10px">
+              <div class="footer_content" style="width: 85%; margin: 0 auto;">
+              <div class="div_flex_footer" style="background: black">
+                <!-- following block is for footer: Copyright section -->
+                <div class="footer_block" style="text-align: center;">
+                  <Text style="font-size: 30px; color: #D4E245;font-family: courier;"> Vancouver Tourism </Text>
+                  <p style="font-size: 15px; color: white;font-family: courier;"> copyright @ 2019. All Right Reserved
+                </div>
+                <!-- following block is for footer: Quick link section -->
+                <div class="footer_block" style="text-align: left; margin-left: 10%;">
+                    <Text style="font-size: 35px; color: #D4E245;font-family: courier;"> Quick Links </Text><Br>
+                      <a href="home.html" style="margin-right: 3%;font-family: courier; text-decoration: none;color: white"> Home </a><Br>
+                      <a href="book_travel_guide.html" style="margin-right: 3%;font-family: courier; text-decoration: none; color: white"> Book Travel Guide </a><Br>
+                      <a href="book_advanture.html" style="margin-right: 3%;font-family: courier; text-decoration: none; color: white"> Book Advanture </a><Br>
+                </div>
+                <!-- following block is for footer: contact no section -->
+                <div class="footer_block">
+                  <Text style="font-size: 35px; color: #D4E245; font-family: courier;"> Contact No. </Text><Br>
+                  <Text style="font-size: 15px; color: white;font-family: courier;"> +1 645 897 8898 </Text><Br>
+                  <Text style="font-size: 15px; color: white;font-family: courier;"> +1 645 897 8898 </Text><Br>
+                  <Text style="font-size: 15px; color: white;font-family: courier;"> +1 645 897 8898 </Text><Br>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Model section for weather-->
+        <div id="model_weather" class="modal">
+
+          <!-- Modal content for weather -->
+          <div class="modal-content" >
+            <span class="close">&times;</span>
+            <p>Vancouvers weather is very pleasant. It is mostly rainy around october-march. Vancouver is ver hot during june-august.From novemebr it starts getting cold and there is snowfall in december to january. The weather is very cold at that time.The sun sets at 4 or 5 pm in the noon and rises also very early.</p>
+            <img src="./home/4-weather2(home).jpg" style="width: auto; height: 300px;" >
+          </div>
+
+        </div>
+
+        <!-- Model section for Geography-->
+        <div id="model_geography" class="modal">
+
+          <!-- Modal content for Geography -->
+          <div class="modal-content" >
+            <span class="close">&times;</span>
+            <p>Vancouver is the largest city in this state.It is surrounded by beaches and it has very beautiful parks and beaches to visit to.</p>
+            <img src="./home/5-geography(home).jpg" style="width: auto; height: 300px;" >
+          </div>
+
+        </div>
+
+        <!-- Model section for culture-->
+        <div id="model_culture" class="modal">
+
+          <!-- Modal content for culture -->
+          <div class="modal-content" >
+            <span class="close">&times;</span>
+            <p>Musquems are the basic people of vancouver. canadians celebrate every festival in a very enthusiastic way. Canada day was celebrated on 1 july and there were fire works all over vancouver.They also celebrate halloween,christmas in a very good way.Music festivals and carnivals are day to day celebrations in vancouver.</p>
+            <img src="./home/7-culture(home).jpg" style="width: auto; height: 300px;" >
+          </div>
+
+        </div>
+
+
+        <script src="homepageJS.js"></script>
+  </body>
+</html>

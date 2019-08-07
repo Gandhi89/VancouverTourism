@@ -1,0 +1,286 @@
+<html>
+  <head>
+    <style>
+      div.header{
+        width: 100%;
+        display: inline-block;
+        background-color: white;
+      }
+      div.header_left{
+        width: 35%;
+        display: inline-block;
+        float: left;
+        font-family: courier;
+        font-size: 20px;
+        background-color: #3F6492;
+      }
+      div.image_belowHeader{
+        background-image: url("./home/one_image1page1.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        max-width: 100%;
+        height: 100%;
+      }
+      .body_block {
+        background-color: #f1f1f1;
+        width: 100%;
+        margin: 10px;
+        display: inline-block;
+      }
+      div.header_right{
+        width: 65%;
+        float: right;
+        display: inline-block;
+        font-family: courier;
+        font-size: 14px;
+        background-color: #3F6492;
+      }
+      .footer{
+        width: 100%;
+        background-color: black;
+      }
+      .footer_block {
+        background-color: black;
+        width: 33%;
+        margin: 10px;
+
+      }
+      .footer_content{
+        width: 100%;
+        background-color: black;
+      }
+      div.div_flex{
+        background-color: white;
+      }
+      div.div_flex_footer{
+        display: flex;
+        flex-wrap: nowrap;
+        background-color: white;
+      }
+      /*The model (background)*/
+      .modal {
+      display: none; /* Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      padding-top: 100px; /* Location of the box */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+      }
+
+      /* Modal Content */
+      .modal-content {
+      background-color: #fefefe;
+      margin: auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 50%;
+      }
+
+      /* The Close Button */
+      .close {
+      color: #aaaaaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+      }
+
+      .close:hover,
+      .close:focus {
+      color: #000;
+      text-decoration: none;
+      cursor: pointer;
+      }
+      /* Model button - submit button */
+      .model_button {
+        background-color: #008CBA; /* Blue */
+        border: none;
+        color: white;
+        padding: 10px 23px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+
+    </style>
+  </head>
+  <body>
+    <!-- following section is header of book_advanture.html -->
+    <section>
+      <div class="header" style="height: 100%">
+        <div class="header_left" style="height: 12%; text-align:center; vertical-align: middle; line-height: 4.5;">
+          <Text style="color: white"> Vancouver Tourism </Text>
+        </div>
+        <div class="header_right" style="height: 12%; text-align:center; vertical-align: middle; line-height: 6;">
+          <a href="home.html" style="margin-right: 3%; color: white; text-decoration: none"> Home </a>
+          <a href="book_travel_guide.html" style="margin-right: 3%; color: white; text-decoration: none"> Book Travel Guide </a>
+          <a href="book_advanture.html" style="margin-right: 3%; color: white; text-decoration: none"> Book Advanture </a>
+          <a href="places_to_visit.html" style="margin-right: 3%; color: white; text-decoration: none"> Places To Visit </a>
+          <a href="public_transport.html" style="margin-right: 3%; color: white; text-decoration: none"> Public Transport </a>
+          <a href="things_to_do.html" style="margin-right: 3%; color: white; text-decoration: none"> Things To Do </a>
+        </div>
+        <div class="image_belowHeader">
+        </div>
+      </div>
+    </section>
+    <!-- following section is body part of book_advanture.html -->
+    <section>
+      <div style="width: 85%; margin: 0 auto;">
+
+              <!-- following block is for body: Sky Diving section -->
+              <div class="div_flex">
+                <div class="body_block" >
+                    <div style="float: right;  width: 99%; margin: 0.1%">
+                        <Text style="font-size: 30px; font-family: Times;"> Sky Diving </Text>
+                    </div>
+                    <div style="float: left; width: 40%; margin: 1%">
+                        <img src="./book_adventure/bookskydiving.jpg" style="width: 100%; height: 300px;" >
+                    </div>
+                    <div style="float: right;  width: 55%; margin: 1%">
+                        <Text> Amazing weather and soulful experience of sky diving.Amazing weather and soulful experience of sky diving.Amazing weather and soulful experience of sky diving.Amazing weather and soulful experience of sky diving.Amazing weather and soulful experience of sky diving.Amazing weather and soulful experience of sky diving.Amazing weather and soulful experience of sky diving.Amazing weather and soulful experience of sky diving.Amazing weather and soulful experience of sky diving.Amazing weather and soulful experience of sky diving.Amazing weather and soulful experience of sky diving.Amazing weather and soulful experience of sky diving.Amazing weather and soulful experience of sky diving.Amazing weather and soulful experience of sky diving.Amazing weather and soulful experience of sky diving.Amazing weather and soulful experience of sky diving.Amazing weather and soulful experience of sky diving.Amazing weather and soulful experience of sky diving.Amazing weather and soulful experience of sky diving. </Text>
+                        <div >
+                            <button id="book" class="model_button"> Book </button>
+                        </div>
+                    </div>
+                </div>
+              </div>
+
+              <!-- following block is for body: Paragliding section -->
+              <div class="div_flex">
+                <div class="body_block" >
+                    <div style="float: right;  width: 99%; margin: 0.1%">
+                        <Text style="font-size: 30px; font-family: Times;"> Paragliding </Text>
+                    </div>
+                    <div style="float: left; width: 40%; margin: 1%">
+                        <img src="./book_adventure/paragliding.jpg" style="width: 100%; height: 300px;" >
+                    </div>
+                    <div style="float: right;  width: 55%; margin: 1%">
+                        <Text> Want to do paragliding.You are at the right place.Want to do paragliding.You are at the right place.Want to do paragliding.You are at the right place.Want to do paragliding.You are at the right place.Want to do paragliding.You are at the right place.Want to do paragliding.You are at the right place.Want to do paragliding.You are at the right place.Want to do paragliding.You are at the right place.Want to do paragliding.You are at the right place.Want to do paragliding.You are at the right place. Want to do paragliding.You are at the right place.Want to do paragliding.You are at the right place.Want to do paragliding.You are here at the right place.Want to do paragliding.You are at the right place.Want to do paragliding.You are at the right place.Want to do paragliding.You are at the right place.Want to do paragliding.You are at the right place.Want to do paragliding.You are at the right place.Want to do paragliding.You are at the right place. Want to do paragliding.You are at the right place.Want to do paragliding.You are at the right place. If you Want to do paragliding?You are at the right place. </Text>
+                        <div >
+                            <button id="book1" class="model_button"> Book </button>
+                        </div>
+                    </div>
+                </div>
+              </div>
+
+              <!-- following block is for body: Suspension Bridge section -->
+              <div class="div_flex">
+                <div class="body_block" >
+                    <div style="float: right;  width: 99%; margin: 0.1%">
+                        <Text style="font-size: 30px; font-family: Times;"> Suspension Bridge </Text>
+                    </div>
+                    <div style="float: left; width: 40%; margin: 1%">
+                        <img src="./book_adventure/suspensionbridgetour.jpg" style="width: 100%; height: 300px;" >
+                    </div>
+                    <div style="float: right;  width: 55%; margin: 1%">
+                        <Text> Book an appointment to travel on the bridge.Book an appointment to travel on the bridge.Book an appointment to travel on the bridge.Book an appointment to travel on the bridge.Book an appointment to travel on the bridge.Book an appointment to travel on the bridge.Book an appointment to travel on the bridge.Book an appointment to travel on the bridge.Book an appointment to travel on the bridge.Book an appointment to travel on the bridge.Book an appointment to travel on the bridge.Book an appointment to travel on the bridge.Book an appointment to travel on the bridge.Book an appointment to travel on the bridge.Book an appointment to travel on the bridge.Book an appointment to travel on the bridge.Book an appointment to travel on the bridge.Book an appointment to travel on the bridge.Book an appointment to travel on the bridge.Book an appointment to travel on the bridge.Book an appointment to travel on the bridge.Book an appointment to travel on the bridge.Book an appointment to travel on the bridge.Book an appointment to travel on the bridge.Book an appointment to travel on the bridge.Book an appointment to travel on the bridge.Book an appointment to travel on the bridge.Book an appointment to travel on the bridge. </Text>
+                        <div >
+                            <button id="book2" class="model_button"> Book </button>
+                        </div>
+                    </div>
+                </div>
+              </div>
+
+              <!-- following block is for body: Whale Watching section -->
+              <div class="div_flex">
+                <div class="body_block" >
+                    <div style="float: right;  width: 99%; margin: 0.1%">
+                        <Text style="font-size: 30px; font-family: Times;"> Whale Watching </Text>
+                    </div>
+                    <div style="float: left; width: 40%; margin: 1%">
+                        <img src="./book_adventure/whalewatching.jpg" style="width: 100%; height: 300px;" >
+                    </div>
+                    <div style="float: right;  width: 55%; margin: 1%">
+                        <Text> Book an appointment for the soulful experience.Book an appointment for the soulful experience.Book an appointment for the soulful experience.Book an appointment for the soulful experience.Book an appointment for the soulful experience.Book an appointment for the soulful experience.Book an appointment for the soulful experience.Book an appointment for the soulful experience.Book an appointment for the soulful experience.Book an appointment for the soulful experience.Book an appointment for the soulful experience.Book an appointment for the soulful experience.Book an appointment for the soulful experience.Book an appointment for the soulful experience.Book an appointment for the soulful experience.Book an appointment for the soulful experience.Book an appointment for the soulful experience.Book an appointment for the soulful experience.Book an appointment for the soulful experience.Book an appointment for the soulful experience.Book an appointment for the soulful experience.Book an appointment for the soulful experience.Book an appointment for the soulful experience.Book an appointment for the soulful experience. </Text>
+                        <div>
+                            <button id="book3" class="model_button"> Book </button>
+                        </div>
+                    </div>
+                </div>
+              </div>
+      </div>
+
+    </section>
+    <!-- following section is footer of book_advanture.html -->
+    <section>
+      <div class="footer" style="margin-top: 10px">
+          <div class="footer_content" style="width: 85%; margin: 0 auto;">
+          <div class="div_flex_footer" style="background: black">
+            <!-- following block is for footer: Copyright section -->
+            <div class="footer_block" style="text-align: center;">
+              <Text style="font-size: 30px; color: #D4E245;font-family: courier;"> Vancouver Tourism </Text>
+              <p style="font-size: 15px; color: white;font-family: courier;"> copyright @ 2019. All Right Reserved
+            </div>
+            <!-- following block is for footer: Quick link section -->
+            <div class="footer_block" style="text-align: left; margin-left: 10%;">
+                <Text style="font-size: 35px; color: #D4E245;font-family: courier;"> Quick Links </Text><Br>
+                  <a href="home.html" style="margin-right: 3%;font-family: courier; text-decoration: none;color: white"> Home </a><Br>
+                  <a href="book_travel_guide.html" style="margin-right: 3%;font-family: courier; text-decoration: none; color: white"> Book Travel Guide </a><Br>
+                  <a href="book_advanture.html" style="margin-right: 3%;font-family: courier; text-decoration: none; color: white"> Book Advanture </a><Br>
+            </div>
+            <!-- following block is for footer: contact no section -->
+            <div class="footer_block">
+              <Text style="font-size: 35px; color: #D4E245; font-family: courier;"> Contact No. </Text><Br>
+              <Text style="font-size: 15px; color: white;font-family: courier;"> +1 645 897 8898 </Text><Br>
+              <Text style="font-size: 15px; color: white;font-family: courier;"> +1 645 897 8898 </Text><Br>
+              <Text style="font-size: 15px; color: white;font-family: courier;"> +1 645 897 8898 </Text><Br>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Model section for sky diving-->
+    <div id="model" class="modal">
+      <!-- Modal content for weather -->
+      <div class="modal-content" >
+        <span class="close">&times;</span>
+            <form>
+              <div style="text-align: center">
+                  <text> Please Fill Following Information </text>
+              </div>
+              <br><br>
+              <div style="width: 80%; margin: 0 auto; background-color: #f8f8f8; text-align: center;" >
+                  <div style="text-align: center;">
+                    <br>
+
+                    <input type="text" name="firstname" placeholder="First Name" style="height: 30px; font-size: 13px" id="model_firstname">
+                    <br><br>
+
+                    <input type="text" name="lastname" placeholder="Last Name" style="height: 30px; font-size: 13px" id="model_lastName">
+                    <br><br>
+
+                    <input type="text" name="Age" placeholder="Age" style="height: 30px; font-size: 13px" id="model_age">
+                    <br><br>
+                    Gender:
+                      <input type="radio" name="gender" value="male"> Male
+                      <input type="radio" name="gender" value="female"> Female
+                      <input type="radio" name="gender" value="other"> Other
+                    <br><br>
+                    Select Date:
+                    <input type="date" name="date" id="date">
+                    <br><br>
+                    <input type="checkbox" name="cb" value=false id="cb"> I understand risk involved and I take full responsibily for it<br></br>
+                  </div>
+                  <div style="text-align: center">
+                      <input type="button" value="Submit"  class="model_button" id="btn_form">
+                  </div>
+              </div>
+            </form>
+      </div>
+    </div>
+
+    <script src="bookAdvantureJS.js"></script>
+
+
+  </body>
+</html>

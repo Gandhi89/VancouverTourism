@@ -1,0 +1,152 @@
+<html>
+  <head>
+    <style>
+      div.header{
+        width: 100%;
+        display: inline-block;
+        background-color: white;
+      }
+      div.header_left{
+        width: 35%;
+        display: inline-block;
+        float: left;
+        font-family: courier;
+        font-size: 20px;
+        background-color: #3F6492;
+      }
+      div.header_right{
+        width: 65%;
+        float: right;
+        display: inline-block;
+        font-family: courier;
+        font-size: 14px;
+        background-color: #3F6492;
+      }
+      div.image_belowHeader{
+        background-image: url("./home/one_image1page1.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        max-width: 100%;
+        height: 100%;
+      }
+      .body_block {
+        background-color: #f1f1f1;
+        width: 40%;
+        margin: 10px;
+        text-align: left;
+        font-size: 30px;
+      }
+      .footer{
+        width: 100%;
+        background-color: black;
+      }
+      .footer_block {
+        background-color: black;
+        width: 33%;
+        margin: 10px;
+
+      }
+      .footer_content{
+        width: 100%;
+        background-color: black;
+      }
+      div.div_flex{
+        display: flex;
+        flex-wrap: nowrap;
+        background-color: white;
+      }
+      div.div_flex_footer{
+        display: flex;
+        flex-wrap: nowrap;
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- following section is header of things_to_do.html -->
+    <section>
+      <div class="header" style="height: 100%">
+        <div class="header_left" style="height: 12%; text-align:center; vertical-align: middle; line-height: 4.5;">
+          <Text style="color: white"> Vancouver Tourism </Text>
+        </div>
+        <div class="header_right" style="height: 12%; text-align:center; vertical-align: middle; line-height: 6;">
+          <a href="home.html" style="margin-right: 3%; color: white; text-decoration: none"> Home </a>
+          <a href="book_travel_guide.html" style="margin-right: 3%; color: white; text-decoration: none"> Book Travel Guide </a>
+          <a href="book_advanture.html" style="margin-right: 3%; color: white; text-decoration: none"> Book Advanture </a>
+          <a href="places_to_visit.html" style="margin-right: 3%; color: white; text-decoration: none"> Places To Visit </a>
+          <a href="public_transport.html" style="margin-right: 3%; color: white; text-decoration: none"> Public Transport </a>
+          <a href="things_to_do.html" style="margin-right: 3%; color: white; text-decoration: none"> Things To Do </a>
+        </div>
+        <div class="image_belowHeader">
+        </div>
+      </div>
+    </section>
+    <!-- following section is body part of things_to_do.html -->
+    <section>
+      <div style="width: 85%; margin: 0 auto;">
+        <div class="div_flex">
+          <!-- following block is for body: biking section -->
+          <div class="body_block">
+            <Text> Biking </Text>
+            <img src="./things_to_do/biking.jpg" style="width: 100%; height: 300px;" >
+            <Text style="font-size: 18px"> You can do biking for hours in vancouver as it has many beautiful beaches and parks whose view you can take on bikes. </Text>
+          </div>
+
+          <!-- following block is for body: cruise section -->
+          <div class="body_block" style="margin-left: 20%">
+            <Text> Cruise Sailing </Text>
+            <img src="./things_to_do/cruisesailing.jpg" style="width: 100%; height: 300px;" >
+            <Text style="font-size: 18px"> Cruises are one of the main things to do in vancouver as they are affordable and shows you and amazing view around the city.</Text>
+          </div>
+        </div>
+
+        <div class="div_flex">
+          <!-- following block is for body: history section -->
+          <div class="body_block">
+            <Text> History <Text>
+            <img src="./things_to_do/history.jpg" style="width: 100%; height: 300px;" >
+            <Text style="font-size: 18px"> Arty gallery and some old buildings gives you a rough view about the history of vancouver and how it is established today.</Text>
+          </div>
+
+          <!-- following block is for body: site seeing section -->
+          <div class="body_block" style="margin-left: 20%">
+            <Text> Site Seeing </Text>
+            <img src="./things_to_do/siteseeing.jpg" style="width: 100%; height: 300px;" >
+            <Text style="font-size: 18px"> Vancouver has many spots of site seeing.It gives you some amazing view of some beautiful places and sites to remember for life time.
+</Text>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- following section is footer of things_to_do.html -->
+    <section>
+      <div class="footer" style="margin-top: 10px">
+          <div class="footer_content" style="width: 85%; margin: 0 auto;">
+          <div class="div_flex_footer" style="background: black">
+            <!-- following block is for footer: Copyright section -->
+            <div class="footer_block" style="text-align: center;">
+              <Text style="font-size: 30px; color: #D4E245;font-family: courier;"> Vancouver Tourism </Text>
+              <p style="font-size: 15px; color: white;font-family: courier;"> copyright @ 2019. All Right Reserved
+            </div>
+            <!-- following block is for footer: Quick link section -->
+            <div class="footer_block" style="text-align: left; margin-left: 10%;">
+                <Text style="font-size: 35px; color: #D4E245;font-family: courier;"> Quick Links </Text><Br>
+                  <a href="home.html" style="margin-right: 3%;font-family: courier; text-decoration: none;color: white"> Home </a><Br>
+                  <a href="book_travel_guide.html" style="margin-right: 3%;font-family: courier; text-decoration: none; color: white"> Book Travel Guide </a><Br>
+                  <a href="book_advanture.html" style="margin-right: 3%;font-family: courier; text-decoration: none; color: white"> Book Advanture </a><Br>
+            </div>
+            <!-- following block is for footer: contact no section -->
+            <div class="footer_block">
+              <Text style="font-size: 35px; color: #D4E245; font-family: courier;"> Contact No. </Text><Br>
+              <Text style="font-size: 15px; color: white;font-family: courier;"> +1 645 897 8898 </Text><Br>
+              <Text style="font-size: 15px; color: white;font-family: courier;"> +1 645 897 8898 </Text><Br>
+              <Text style="font-size: 15px; color: white;font-family: courier;"> +1 645 897 8898 </Text><Br>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
